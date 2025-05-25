@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./resources/img/p.png"
+      type="image/x-icon"
+    />
+    <title>Portfolio - Operator Framing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/aba456c418.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="text-white font-mono">
+    <header
+      class="flex justify-between items-center px-[14%] py-4 sticky top-0 bg-black/80 z-10 backdrop-blur-lg"
+    >
+      <div class="flex items-center space-x-4">
+        <img
+          class="h-10 w-10 p-[10px] border border-white"
+          src="./resources/img/p.png"
+          alt="Logo"
+        />
+
+        <span class="text-xl">Portfolio</span>
+      </div>
+      <nav class="hidden md:flex space-x-6 text-gray-400">
+        <div class="space-x-1">
+          <a href="#home" class="hover:text-white"
+            ><img
+              class="w-11 h-11 mx-auto inline p-3"
+              src="./resources/img/home.png"
+              alt=""
+            />Home</a
+          >
+          <a href="#webApp" class="hover:text-white"
+            ><img
+              class="w-11 h-11 mx-auto inline p-3"
+              src="./resources/img/programming.png"
+              alt=""
+            />Web App</a
+          >
+          <a href="#pixelArt" class="hover:text-white"
+            ><img
+              class="w-11 h-11 mx-auto inline p-3"
+              src="./resources/img/image.png"
+              alt=""
+            />Pixel Art</a
+          >
+          <a href="#chiSono" class="hover:text-white"
+            ><img
+              class="w-10 h-10 mx-auto inline p-3"
+              src="./resources/img/user.png"
+              alt=""
+            />Chi Sono</a
+          >
+          <a href="#contatti" class="hover:text-white"
+            ><img
+              class="w-11 h-11 mx-auto inline p-3"
+              src="./resources/img/email.png"
+              alt=""
+            />Contatti</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <!-- hero -->
+    <main
+      id="home"
+      class="grid grid-cols-1 lg:grid-cols-2 items-center py-48 mx-auto px-[14%]"
+    >
+      <!-- Left Text Section -->
+      <div>
+        <p class="uppercase tracking-widest text-gray-400 mb-4">
+          Sviluppatore creativo / Artista Pixel
+        </p>
+        <h1 class="text-7xl font-extrabold leading-tight">
+          OPERATOR<br>FRAMING
+        </h1>
+        <p class="mt-6 text-lg text-gray-300 max-w-md">
+          Creazione di esperienze digitali con codice pulito e visione
+          artistica. Specializzato in applicazioni web e pixel art.
+        </p>
+        <div class="mt-10 flex space-x-4">
+          <a
+            href="#webApp"
+            class="px-8 py-3 bg-white text-black uppercase hover:bg-gray-200 transition"
+          >
+            Progetti Web
+          </a>
+          <a
+            href="#pixelArt"
+            class="px-8 py-3 border border-white uppercase hover:bg-gray-100/20 transition"
+          >
+            Pixel Art
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Dino Section -->
+      <div class="flex justify-end">
+        <img
+          class="w-[300px] lg:w-[400px]"
+          src="./resources/img/dino.png"
+          alt="Dino Pixel Art"
+        />
+      </div>
+    </main>
+
+    <!-- web app -->
+    <div class="mx-auto px-[14%] py-24 bg-black/70" id="webApp">
+      <!-- Section Title -->
+      <h2 class="text-4xl font-bold text-center mb-4">APPLICAZIONI WEB</h2>
+      <p class="text-center text-lg text-gray-400 mb-10">
+        Applicazioni web moderne e responsive costruite con le tecnologie più
+        recenti.
+      </p>
+
+      <!-- Projects Grid -->
+      <div class="grid gap-6 md:grid-cols-2">
+        <!-- Project Card -->
+        <div class="relative group cursor-pointer" data-project="phelsuma">
+          <img
+            src="./resources/img/phelsuma-vibes.png"
+            alt="Phelsuma Vibes"
+            class="aspect-video object-cover object-top-left border border-white"
+          />
+          <div
+            class="absolute bottom-0 left-0 bg-black bg-opacity-50 w-full p-4 opacity-0 group-hover:opacity-100 transition"
+          >
+            <h3 class="font-bold">Phelsuma Vibes</h3>
+          </div>
+        </div>
+
+        <div class="relative group cursor-pointer" data-project="pack2go">
+          <img
+            src="./resources/img/pack2go.png"
+            alt="Pack2Go"
+            class="aspect-video object-cover object-top-left border border-white"
+          />
+          <div
+            class="absolute bottom-0 left-0 bg-black bg-opacity-50 w-full p-4 opacity-0 group-hover:opacity-100 transition"
+          >
+            <h3 class="font-bold">Pack2Go</h3>
+          </div>
+        </div>
+
+        <div class="relative group cursor-pointer" data-project="bibliosauro">
+          <img
+            src="./resources/img/bibliosauro.png"
+            alt="Bibliosauro"
+            class="aspect-video object-cover object-top-left border border-white"
+          />
+          <div
+            class="absolute bottom-0 left-0 bg-black bg-opacity-50 w-full p-4 opacity-0 group-hover:opacity-100 transition"
+          >
+            <h3 class="font-bold">Bibliosauro</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Background -->
+    <div
+      id="modal"
+      class="fixed inset-0 bg-black/70 hidden items-center justify-center z-10 p-2"
+    >
+      <div
+        class="bg-black border border-white p-2 overflow-hidden max-w-lg w-full"
+      >
+        <div class="relative">
+          <button
+            id="modalClose"
+            class="absolute top-2 right-2 text-gray-400 hover:text-white"
+          >
+            ✕
+          </button>
+          <img
+            id="modalImg"
+            src=""
+            alt=""
+            class="w-full aspect-video object-cover"
+          />
+        </div>
+        <div class="p-6">
+          <h3 id="modalTitle" class="text-2xl font-bold mb-2"></h3>
+          <p
+            id="modalDesc"
+            class="text-gray-300 mb-4 text-sm leading-relaxed"
+          ></p>
+          <div id="modalTags" class="flex flex-wrap gap-2 mb-4"></div>
+          <div class="flex gap-4">
+            <a
+              id="modalView"
+              href="#"
+              target="_blank"
+              class="px-8 py-3 bg-white text-black uppercase hover:bg-gray-200 transition"
+              >Vedi Prodotto</a
+            >
+            <a
+              id="modalCode"
+              href="#"
+              target="_blank"
+              class="px-8 py-3 border border-white uppercase hover:bg-gray-100/20 transition"
+              >Codice Sorgente</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- pixel art -->
+    <div class="mx-auto py-24 px-[14%]" id="pixelArt">
+      <!-- Titolo e sottotitolo -->
+      <header class="text-center mb-16">
+        <h2
+          class="text-4xl lg:text-5xl font-extrabold text-white-400 uppercase font-[Tiny5]"
+        >
+          Pixel Art
+        </h2>
+        <p class="mt-4 text-lg text-gray-300">
+          Creazioni di pixel art artigianali per giochi e media digitali.
+        </p>
+      </header>
+
+      <!-- Grid cards -->
+      <div id="gallery" class="grid grid-cols-7 grid-rows-3 gap-6">
+        <!-- Card 1: grande orizzontale (spans 2x2) -->
+        <div
+          data-title="Murales Drago"
+          class="relative col-span-3 row-span-3 border border-white-500 overflow-hidden cursor-pointer group"
+        >
+          <img
+            src="./resources/img/drago-streatart.png"
+            alt="Murales Drago"
+            class="w-full h-full object-cover transition-transform group-hover:scale-105"
+          />
+        </div>
+
+        <!-- Card 2: alto verticale (spans 1x2) -->
+        <div
+          data-title="Trueno"
+          class="relative col-span-2 row-span-1 border border-white-500 overflow-hidden cursor-pointer group"
+        >
+          <img
+            src="./resources/img/trueno.png"
+            alt="Trueno"
+            class="w-full h-full object-cover transition-transform group-hover:scale-105"
+          />
+          <!-- <div
+            class="absolute bottom-0 left-0 bg-white-500 bg-opacity-80 px-4 py-2 uppercase font-semibold text-sm"
+          >
+            Avventura nella Foresta
+          </div> -->
+        </div>
+
+        <!-- Card 3: quadrata piccola -->
+        <div
+          data-title="Amuleto"
+          class="relative col-span-2 row-span-2 border border-white-500 overflow-hidden cursor-pointer group"
+        >
+          <img
+            src="./resources/img/AmuletoMaMeglio.png"
+            alt="Amuleto"
+            class="w-full h-full object-cover transition-transform group-hover:scale-105"
+          />
+        </div>
+
+        <!-- Card 4: quadrata piccola -->
+        <div
+          data-title="Icone"
+          class="relative col-span-2 row-span-1 border border-white-500 overflow-hidden cursor-pointer group"
+        >
+          <img
+            src="./resources/img/twich-icons.png"
+            alt="Icone"
+            class="w-full h-full object-cover transition-transform group-hover:scale-105"
+          />
+        </div>
+
+        <!-- Card 5: quadrata piccola -->
+        <div
+          data-title="Bar Studios"
+          class="relative col-span-4 row-span-1 border border-white-500 overflow-hidden cursor-pointer group"
+        >
+          <img
+            src="./resources/img/bar-studios.png"
+            alt="Bar Studios"
+            class="w-full h-full object-cover transition-transform group-hover:scale-105"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Chi Sono -->
+    <div class="w-full px-[14%] py-24" id="chiSono">
+      <h1 class="text-4xl font-bold text-center mb-12">CHI SONO</h1>
+
+      <div
+        class="flex flex-col md:flex-row md:justify-between md:items-start gap-16"
+      >
+        <!-- Profile Info -->
+        <div
+          class="flex flex-col items-center md:items-start text-center md:text-left"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1502767089025-6572583495b4"
+            alt="Marcello Croci"
+            class="w-60 h-60 object-cover border-2 border-gray-500 p-1 bg-black/40"
+          />
+          <h2 class="text-2xl font-bold mt-4">Marcello Croci</h2>
+          <p class="text-sm mt-1">Web Developer & Pixel Artist</p>
+          <p class="text-sm text-gray-400">Podenzano, PC</p>
+
+          <div class="mt-6 space-y-4 text-left">
+            <div class="flex items-center space-x-2">
+              <span class="material-icons">school</span>
+              <div>
+                <div class="font-semibold">Formazione</div>
+                <div class="text-sm text-gray-300">Diploma in Informatica</div>
+              </div>
+            </div>
+            <div class="flex items-center space-x-2">
+              <span class="material-icons">work</span>
+              <div>
+                <div class="font-semibold">Esperienza</div>
+                <div class="text-sm text-gray-300">2 mesi in Sviluppo Web</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bio & Skills -->
+        <div class="flex-1 max-w-2xl">
+          <div class="mb-10">
+            <h3 class="text-2xl font-bold mb-2">La Mia Storia</h3>
+            <p class="text-gray-300 text-lg leading-relaxed">
+              Sono uno sviluppatore web e appassionato di arte digitale, con un
+              forte interesse per tutto ciò che unisce logica e creatività.<br><br> 
+
+              Dopo aver intrapreso un percorso di studi in Informatica, ho sviluppato
+              competenze tecniche solide che metto in pratica nella
+              realizzazione di siti web curati sia dal punto di vista funzionale
+              che estetico. Amo lavorare sull’interfaccia utente e
+              sull’esperienza complessiva, dando grande importanza ai dettagli e
+              al design.<br><br> 
+
+              Il mio obiettivo è creare progetti digitali che siano
+              efficaci, ben strutturati e visivamente armoniosi, offrendo
+              soluzioni che uniscano usabilità e stile.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-2xl font-bold mb-4">Le Mie Competenze</h3>
+            <div class="grid md:grid-cols-3 gap-4">
+              <div class="border border-gray-700 rounded-lg p-4">
+                <h4 class="font-bold text-lg mb-2">Sviluppo Web</h4>
+                <p class="text-sm text-gray-300">
+                  HTML, JavaScript, CSS, Tailwind CSS, Node.js
+                </p>
+              </div>
+              <div class="border border-gray-700 rounded-lg p-4">
+                <h4 class="font-bold text-lg mb-2">Pixel Art</h4>
+                <p class="text-sm text-gray-300">
+                  Ambienti, Oggetti, Icone, Loghi
+                </p>
+              </div>
+              <div class="border border-gray-700 rounded-lg p-4">
+                <h4 class="font-bold text-lg mb-2">Altre Competenze</h4>
+                <p class="text-sm text-gray-300">
+                  Design UI/UX, Sviluppo di Giochi, Gestione Progetti
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contattami -->
+    <div class="mx-auto px-[14%] pt-24" id="contatti">
+      <h1 class="text-4xl font-bold text-center mb-12">CONTATTAMI</h1>
+      <div class="relative pb-24 grid grid-cols-1 lg:grid-cols-2 gap-16 z-5">
+        <!-- LEFT COLUMN: INFO -->
+        <section class="space-y-8">
+          <p class="max-w-md">
+            Hai un progetto in mente, vuoi collaborare o semplicemente vuoi
+            chiedermi qualcosa? Non esitare a contattarmi attraverso uno di
+            questi canali.
+          </p>
+
+          <ul class="space-y-6">
+            <!-- Email -->
+            <li class="flex items-center space-x-4">
+              <!-- icona lettera -->
+              <svg
+                class="w-6 h-6 text-gray-400"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M4 4h16v16H4z"></path>
+                <polyline points="4,4 12,12 20,4"></polyline>
+              </svg>
+              <div>
+                <div class="font-semibold">Email</div>
+                <div class="text-gray-300">marci.croci06@gmail.com</div>
+              </div>
+            </li>
+            <!-- Posizione -->
+            <li class="flex items-center space-x-4">
+              <svg
+                class="w-6 h-6 text-gray-400"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 21s-6-5.333-6-10a6 6 0 1 1 12 0c0 4.667-6 10-6 10z"
+                ></path>
+                <circle cx="12" cy="11" r="2"></circle>
+              </svg>
+              <div>
+                <div class="font-semibold">Posizione</div>
+                <div class="text-gray-300">Podenzano, PC</div>
+              </div>
+            </li>
+            <!-- Telefono -->
+            <li class="flex items-center space-x-4">
+              <svg
+                class="w-6 h-6 text-gray-400"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3 5a2 2 0 0 1 2-2h3.6a1 1 0 0 1 1 .78l1 4a1 1 0 0 1-.27.95l-2.2 2.2a16 16 0 0 0 6.8 6.8l2.2-2.2a1 1 0 0 1 .95-.27l4 1a1 1 0 0 1 .78 1V19a2 2 0 0 1-2 2h-1C9.163 21 3 14.837 3 7V5z"
+                ></path>
+              </svg>
+              <div>
+                <div class="font-semibold">Telefono</div>
+                <div class="text-gray-300">+39 3914595590</div>
+              </div>
+            </li>
+          </ul>
+
+          <div>
+            <div class="font-semibold mb-2">Seguimi</div>
+            <div class="flex space-x-4">
+              <!-- GitHub -->
+              <a
+                href="https://github.com/MarcelloCroci"
+                class="px-3 py-2 border border-gray-600 bg-black/40 hover:border-white transition"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github" class="text-white h-6 w-6"></i>
+              </a>
+              <!-- LinkedIn -->
+              <a
+                href="https://www.linkedin.com/in/marcello-croci/"
+                class="px-3 py-2 border border-gray-600 bg-black/40 hover:border-white transition"
+                target="_blank"
+              >
+                <i class="fa-brands fa-linkedin-in" class="text-white h-6 w-6"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- RIGHT COLUMN: FORM -->
+        <section>
+          <div
+            class="bg-black bg-opacity-60 backdrop-blur-md p-8 rounded-lg space-y-6"
+          >
+            <h3 class="text-xl font-semibold uppercase">Invia un messaggio</h3>
+            <form id="contact-form" class="space-y-4">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-gray-400 mb-1">Il tuo nome</label>
+                  <input
+                    type="text"
+                    name="from_name"
+                    placeholder="Nome Cognome"
+                    class="w-full bg-transparent border border-gray-600 placeholder-gray-500 text-white p-3 rounded focus:outline-none"
+                  />
+                </div>
+                <div>
+                  <label class="block text-gray-400 mb-1">La tua email</label>
+                  <input
+                    type="email"
+                    name="reply_to"
+                    placeholder="email@example.com"
+                    class="w-full bg-transparent border border-gray-600 placeholder-gray-500 text-white p-3 rounded focus:outline-none"
+                  />
+                </div>
+              </div>
+              <div>
+                <label class="block text-gray-400 mb-1">Oggetto</label>
+                <input
+                  type="text"
+                  name="subject"
+                  placeholder="Richiesta Progetto"
+                  class="w-full bg-transparent border border-gray-600 placeholder-gray-500 text-white p-3 rounded focus:outline-none"
+                />
+              </div>
+              <div>
+                <label class="block text-gray-400 mb-1">Messaggio</label>
+                <textarea
+                  name="message"
+                  rows="5"
+                  placeholder="Parlami del tuo progetto..."
+                  class="w-full bg-transparent border border-gray-600 placeholder-gray-500 text-white p-3 rounded focus:outline-none resize-none"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="w-full mt-4 bg-white text-black uppercase py-3 font-medium hover:bg-gray-200 transition"
+              >
+                Invia Messaggio
+              </button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer
+      class="grid grid-cols-1 md:grid-cols-3 gap-4 absolute mx-auto w-full bg-black my-auto h-[90px] text-gray-400"
+    >
+      <div class="text-center max-w-sm mx-auto mt-[30px]">
+        <img
+          class="h-10 w-10 p-[10px] border border-white inline mt-[-5px]"
+          src="./resources/img/p.png"
+          alt="Logo"
+        />
+
+        <span class="text-xl">Portfolio</span>
+      </div>
+      <div class="text-center mt-[30px] mx-auto">
+        <div class="space-x-4">
+          <a href="#webApp" class="hover:text-white">Web App</a>
+          <a href="#pixelArt" class="hover:text-white">Pixel Art</a>
+          <a href="#chiSono" class="hover:text-white">Chi Sono</a>
+          <a href="#contatti" class="hover:text-white">Contatti</a>
+        </div>
+      </div>
+
+      <div class="text-center max-w-md mt-[30px] mx-auto">
+        &copy; 2025 Portfolio. Tutti i diritti riservati.
+      </div>
+    </footer>
+
+    <!-- EMAILJS, FORM HANDLER, MODAL & PROJECTS -->
+    <script>
+      const projects = {
+        phelsuma: {
+          title: "Phelsuma Vibes",
+          img: "./resources/img/phelsuma-vibes.png",
+          desc: "Una dashboard di amministrazione responsive per piattaforme e-commerce con analisi in tempo reale, gestione dell'inventario ed elaborazione degli ordini.",
+          tags: ["HTML", "JavaScript", "CSS", "Personal Project"],
+          view: "https://phelsuma-vibes.netlify.app",
+          code: "#",
+        },
+        pack2go: {
+          title: "Pack2Go",
+          img: "./resources/img/pack2go.png",
+          desc: "Una dashboard di amministrazione responsive per piattaforme e-commerce con analisi in tempo reale, gestione dell'inventario ed elaborazione degli ordini.",
+          tags: [
+            "HTML",
+            "JavaScript",
+            "TailwindCSS",
+            "NodeJS",
+            "School Project",
+          ],
+          view: "https://pack2go.onrender.com",
+          code: "https://github.com/MarcelloCroci/Progettone-Multimediale",
+        },
+        bibliosauro: {
+          title: "Bibliosauro",
+          img: "./resources/img/bibliosauro.png",
+          desc: "Una dashboard di amministrazione responsive per piattaforme e-commerce con analisi in tempo reale, gestione dell'inventario ed elaborazione degli ordini.",
+          tags: ["HTML", "JavaScript", "CSS", "NodeJS", "School Project"],
+          view: "https://bibliosauro.onrender.com",
+          code: "https://github.com/MarcelloCroci/Bibliosauro",
+        },
+      };
+
+      document.querySelectorAll("[data-project]").forEach((card) => {
+        card.addEventListener("click", () => {
+          const key = card.dataset.project;
+          const p = projects[key];
+          document.getElementById("modalImg").src = p.img;
+          document.getElementById("modalTitle").textContent = p.title;
+          document.getElementById("modalDesc").textContent = p.desc;
+          const tagContainer = document.getElementById("modalTags");
+          tagContainer.innerHTML = "";
+          p.tags.forEach((t) => {
+            const span = document.createElement("span");
+            span.className = "text-xs border border-gray-600 rounded px-2 py-1";
+            span.textContent = t;
+            tagContainer.append(span);
+          });
+          document.getElementById("modalView").href = p.view;
+          document.getElementById("modalCode").href = p.code;
+          document.getElementById("modal").classList.remove("hidden");
+          document.getElementById("modal").classList.add("flex");
+        });
+      });
+
+      document.getElementById("modalClose").addEventListener("click", () => {
+        document.getElementById("modal").classList.add("hidden");
+        document.getElementById("modal").classList.remove("flex");
+      });
+
+      // Esempio di JS: logga il titolo della card cliccata
+      document.querySelectorAll("#gallery > div").forEach((card) => {
+        card.addEventListener("click", () => {
+          const title = card.getAttribute("data-title");
+          alert("Hai cliccato su: " + title);
+          // Qui puoi aprire una lightbox, navigare a un dettaglio, ecc.
+        });
+      });
+
+      // inizializza EmailJS
+      emailjs.init("YOUR_USER_ID");
+
+      document
+        .getElementById("contact-form")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this).then(
+            () => {
+              alert("Messaggio inviato con successo!");
+              this.reset();
+            },
+            (err) => {
+              console.error(err);
+              alert("Si è verificato un errore nell'invio. Riprova più tardi.");
+            }
+          );
+        });
+    </script>
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </body>
+</html>
