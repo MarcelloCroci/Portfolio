@@ -8,7 +8,7 @@
       href="./resources/img/p.png"
       type="image/x-icon"
     />
-    <title>Portfolio - Operator Framing</title>
+    <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -33,7 +33,7 @@
 
         <span class="text-xl">Portfolio</span>
       </div>
-      <nav class="hidden md:flex space-x-6 text-gray-400">
+      <nav class="hidden md:flex space-x-6 text-neutral-400">
         <div class="space-x-1">
           <a href="#home" class="hover:text-white"
             ><img
@@ -81,26 +81,26 @@
     >
       <!-- Left Text Section -->
       <div>
-        <p class="uppercase tracking-widest text-gray-400 mb-4">
+        <p class="uppercase tracking-widest text-neutral-400 mb-4">
           Sviluppatore creativo / Artista Pixel
         </p>
         <h1 class="text-7xl font-extrabold leading-tight">
           OPERATOR<br>FRAMING
         </h1>
-        <p class="mt-6 text-lg text-gray-300 max-w-md">
+        <p class="mt-6 text-lg/6 text-neutral-300 max-w-md">
           Creazione di esperienze digitali con codice pulito e visione
           artistica. Specializzato in applicazioni web e pixel art.
         </p>
         <div class="mt-10 flex space-x-4">
           <a
             href="#webApp"
-            class="px-8 py-3 bg-white text-black uppercase hover:bg-gray-200 transition"
+            class="px-8 py-3 bg-white text-black uppercase hover:bg-neutral-200 transition"
           >
             Progetti Web
           </a>
           <a
             href="#pixelArt"
-            class="px-8 py-3 border border-white uppercase hover:bg-gray-100/20 transition"
+            class="px-8 py-3 border border-white uppercase hover:bg-neutral-100/20 transition"
           >
             Pixel Art
           </a>
@@ -118,10 +118,10 @@
     </main>
 
     <!-- web app -->
-    <div class="mx-auto px-[14%] py-24 bg-black/70" id="webApp">
+    <div class="mx-auto px-[14%] py-24 bg-black/50" id="webApp">
       <!-- Section Title -->
       <h2 class="text-4xl font-bold text-center mb-4">APPLICAZIONI WEB</h2>
-      <p class="text-center text-lg text-gray-400 mb-10">
+      <p class="text-center text-lg text-neutral-400 mb-10">
         Applicazioni web moderne e responsive costruite con le tecnologie più
         recenti.
       </p>
@@ -129,11 +129,11 @@
       <!-- Projects Grid -->
       <div class="grid gap-6 md:grid-cols-2">
         <!-- Project Card -->
-        <div class="relative group cursor-pointer" data-project="phelsuma">
+        <div class="relative group cursor-pointer border border-white-500 overflow-hidden" data-project="phelsuma">
           <img
             src="./resources/img/phelsuma-vibes.png"
             alt="Phelsuma Vibes"
-            class="aspect-video object-cover object-top-left border border-white"
+            class="aspect-video object-cover object-top-left group-hover:scale-105 transition-transform"
           />
           <div
             class="absolute bottom-0 left-0 bg-black bg-opacity-50 w-full p-4 opacity-0 group-hover:opacity-100 transition"
@@ -142,11 +142,11 @@
           </div>
         </div>
 
-        <div class="relative group cursor-pointer" data-project="pack2go">
+        <div class="relative group cursor-pointer border border-white-500 overflow-hidden" data-project="pack2go">
           <img
             src="./resources/img/pack2go.png"
             alt="Pack2Go"
-            class="aspect-video object-cover object-top-left border border-white"
+            class="aspect-video object-cover object-top-left group-hover:scale-105 transition-transform"
           />
           <div
             class="absolute bottom-0 left-0 bg-black bg-opacity-50 w-full p-4 opacity-0 group-hover:opacity-100 transition"
@@ -155,11 +155,11 @@
           </div>
         </div>
 
-        <div class="relative group cursor-pointer" data-project="bibliosauro">
+        <div class="relative group cursor-pointer border border-white-500 overflow-hidden" data-project="bibliosauro">
           <img
             src="./resources/img/bibliosauro.png"
             alt="Bibliosauro"
-            class="aspect-video object-cover object-top-left border border-white"
+            class="aspect-video object-cover object-top-left group-hover:scale-105 transition-transform"
           />
           <div
             class="absolute bottom-0 left-0 bg-black bg-opacity-50 w-full p-4 opacity-0 group-hover:opacity-100 transition"
@@ -181,7 +181,7 @@
         <div class="relative">
           <button
             id="modalClose"
-            class="absolute top-2 right-2 text-gray-400 hover:text-white"
+            class="absolute top-2 right-2 text-neutral-400 hover:text-white"
           >
             ✕
           </button>
@@ -196,7 +196,7 @@
           <h3 id="modalTitle" class="text-2xl font-bold mb-2"></h3>
           <p
             id="modalDesc"
-            class="text-gray-300 mb-4 text-sm leading-relaxed"
+            class="text-neutral-300 mb-4 text-sm leading-relaxed"
           ></p>
           <div id="modalTags" class="flex flex-wrap gap-2 mb-4"></div>
           <div class="flex gap-4">
@@ -204,14 +204,14 @@
               id="modalView"
               href="#"
               target="_blank"
-              class="px-8 py-3 bg-white text-black uppercase hover:bg-gray-200 transition"
+              class="px-8 py-3 bg-white text-black uppercase hover:bg-neutral-200 transition"
               >Vedi Prodotto</a
             >
             <a
               id="modalCode"
               href="#"
               target="_blank"
-              class="px-8 py-3 border border-white uppercase hover:bg-gray-100/20 transition"
+              class="px-8 py-3 border border-white uppercase hover:bg-neutral-100/20 transition"
               >Codice Sorgente</a
             >
           </div>
@@ -220,7 +220,7 @@
     </div>
 
     <!-- pixel art -->
-    <div class="mx-auto py-24 px-[14%]" id="pixelArt">
+    <div class="mx-auto py-24 px-[14%] bg-black/50" id="pixelArt">
       <!-- Titolo e sottotitolo -->
       <header class="text-center mb-16">
         <h2
@@ -228,7 +228,7 @@
         >
           Pixel Art
         </h2>
-        <p class="mt-4 text-lg text-gray-300">
+        <p class="mt-4 text-lg text-neutral-300">
           Creazioni di pixel art artigianali per giochi e media digitali.
         </p>
       </header>
@@ -238,24 +238,24 @@
         <!-- Card 1: grande orizzontale (spans 2x2) -->
         <div
           data-title="Murales Drago"
-          class="relative col-span-3 row-span-3 border border-white-500 overflow-hidden cursor-pointer group"
+          class="relative col-span-3 row-span-3 border border-white-500 overflow-hidden group"
         >
           <img
             src="./resources/img/drago-streatart.png"
             alt="Murales Drago"
-            class="w-full h-full object-cover transition-transform group-hover:scale-105"
+            class="w-full h-full object-cover transition-transform"
           />
         </div>
 
         <!-- Card 2: alto verticale (spans 1x2) -->
         <div
           data-title="Trueno"
-          class="relative col-span-2 row-span-1 border border-white-500 overflow-hidden cursor-pointer group"
+          class="relative col-span-2 row-span-1 border border-white-500 overflow-hidden group"
         >
           <img
             src="./resources/img/trueno.png"
             alt="Trueno"
-            class="w-full h-full object-cover transition-transform group-hover:scale-105"
+            class="w-full h-full object-cover transition-transform "
           />
           <!-- <div
             class="absolute bottom-0 left-0 bg-white-500 bg-opacity-80 px-4 py-2 uppercase font-semibold text-sm"
@@ -267,36 +267,36 @@
         <!-- Card 3: quadrata piccola -->
         <div
           data-title="Amuleto"
-          class="relative col-span-2 row-span-2 border border-white-500 overflow-hidden cursor-pointer group"
+          class="relative col-span-2 row-span-2 border border-white-500 overflow-hidden group"
         >
           <img
             src="./resources/img/AmuletoMaMeglio.png"
             alt="Amuleto"
-            class="w-full h-full object-cover transition-transform group-hover:scale-105"
+            class="w-full h-full object-cover transition-transform "
           />
         </div>
 
         <!-- Card 4: quadrata piccola -->
         <div
           data-title="Icone"
-          class="relative col-span-2 row-span-1 border border-white-500 overflow-hidden cursor-pointer group"
+          class="relative col-span-2 row-span-1 border border-white-500 overflow-hidden group"
         >
           <img
             src="./resources/img/twich-icons.png"
             alt="Icone"
-            class="w-full h-full object-cover transition-transform group-hover:scale-105"
+            class="w-full h-full object-cover transition-transform "
           />
         </div>
 
         <!-- Card 5: quadrata piccola -->
         <div
           data-title="Bar Studios"
-          class="relative col-span-4 row-span-1 border border-white-500 overflow-hidden cursor-pointer group"
+          class="relative col-span-4 row-span-1 border border-white-500 overflow-hidden group"
         >
           <img
             src="./resources/img/bar-studios.png"
             alt="Bar Studios"
-            class="w-full h-full object-cover transition-transform group-hover:scale-105"
+            class="w-full h-full object-cover transition-transform "
           />
         </div>
       </div>
@@ -316,25 +316,25 @@
           <img
             src="https://images.unsplash.com/photo-1502767089025-6572583495b4"
             alt="Marcello Croci"
-            class="w-60 h-60 object-cover border-2 border-gray-500 p-1 bg-black/40"
+            class="w-60 h-60 object-cover border-2 border-neutral-500 p-1 bg-black/40"
           />
           <h2 class="text-2xl font-bold mt-4">Marcello Croci</h2>
           <p class="text-sm mt-1">Web Developer & Pixel Artist</p>
-          <p class="text-sm text-gray-400">Podenzano, PC</p>
+          <p class="text-sm text-neutral-400">Podenzano, PC</p>
 
           <div class="mt-6 space-y-4 text-left">
             <div class="flex items-center space-x-2">
               <span class="material-icons">school</span>
               <div>
                 <div class="font-semibold">Formazione</div>
-                <div class="text-sm text-gray-300">Diploma in Informatica</div>
+                <div class="text-sm text-neutral-300">Diploma in Informatica</div>
               </div>
             </div>
             <div class="flex items-center space-x-2">
               <span class="material-icons">work</span>
               <div>
                 <div class="font-semibold">Esperienza</div>
-                <div class="text-sm text-gray-300">2 mesi in Sviluppo Web</div>
+                <div class="text-sm text-neutral-300">2 mesi in Sviluppo Web</div>
               </div>
             </div>
           </div>
@@ -344,7 +344,7 @@
         <div class="flex-1 max-w-2xl">
           <div class="mb-10">
             <h3 class="text-2xl font-bold mb-2">La Mia Storia</h3>
-            <p class="text-gray-300 text-lg leading-relaxed">
+            <p class="text-neutral-300 text-lg/6 ">
               Sono uno sviluppatore web e appassionato di arte digitale, con un
               forte interesse per tutto ciò che unisce logica e creatività.<br><br> 
 
@@ -364,21 +364,21 @@
           <div>
             <h3 class="text-2xl font-bold mb-4">Le Mie Competenze</h3>
             <div class="grid md:grid-cols-3 gap-4">
-              <div class="border border-gray-700 rounded-lg p-4">
+              <div class="border border-neutral-700 rounded-lg p-4">
                 <h4 class="font-bold text-lg mb-2">Sviluppo Web</h4>
-                <p class="text-sm text-gray-300">
+                <p class="text-sm text-neutral-300">
                   HTML, JavaScript, CSS, Tailwind CSS, Node.js
                 </p>
               </div>
-              <div class="border border-gray-700 rounded-lg p-4">
+              <div class="border border-neutral-700 rounded-lg p-4">
                 <h4 class="font-bold text-lg mb-2">Pixel Art</h4>
-                <p class="text-sm text-gray-300">
+                <p class="text-sm text-neutral-300">
                   Ambienti, Oggetti, Icone, Loghi
                 </p>
               </div>
-              <div class="border border-gray-700 rounded-lg p-4">
+              <div class="border border-neutral-700 rounded-lg p-4">
                 <h4 class="font-bold text-lg mb-2">Altre Competenze</h4>
-                <p class="text-sm text-gray-300">
+                <p class="text-sm text-neutral-300">
                   Design UI/UX, Sviluppo di Giochi, Gestione Progetti
                 </p>
               </div>
@@ -394,7 +394,7 @@
       <div class="relative pb-24 grid grid-cols-1 lg:grid-cols-2 gap-16 z-5">
         <!-- LEFT COLUMN: INFO -->
         <section class="space-y-8">
-          <p class="max-w-md">
+          <p class="max-w-lg text-lg/6 text-neutral-300">
             Hai un progetto in mente, vuoi collaborare o semplicemente vuoi
             chiedermi qualcosa? Non esitare a contattarmi attraverso uno di
             questi canali.
@@ -405,7 +405,7 @@
             <li class="flex items-center space-x-4">
               <!-- icona lettera -->
               <svg
-                class="w-6 h-6 text-gray-400"
+                class="w-6 h-6 text-neutral-400"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="2"
@@ -417,13 +417,13 @@
               </svg>
               <div>
                 <div class="font-semibold">Email</div>
-                <div class="text-gray-300">marci.croci06@gmail.com</div>
+                <div class="text-neutral-300">marci.croci06@gmail.com</div>
               </div>
             </li>
             <!-- Posizione -->
             <li class="flex items-center space-x-4">
               <svg
-                class="w-6 h-6 text-gray-400"
+                class="w-6 h-6 text-neutral-400"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="2"
@@ -437,13 +437,13 @@
               </svg>
               <div>
                 <div class="font-semibold">Posizione</div>
-                <div class="text-gray-300">Podenzano, PC</div>
+                <div class="text-neutral-300">Podenzano, PC</div>
               </div>
             </li>
             <!-- Telefono -->
             <li class="flex items-center space-x-4">
               <svg
-                class="w-6 h-6 text-gray-400"
+                class="w-6 h-6 text-neutral-400"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="2"
@@ -456,7 +456,7 @@
               </svg>
               <div>
                 <div class="font-semibold">Telefono</div>
-                <div class="text-gray-300">+39 3914595590</div>
+                <div class="text-neutral-300">+39 3914595590</div>
               </div>
             </li>
           </ul>
@@ -467,7 +467,7 @@
               <!-- GitHub -->
               <a
                 href="https://github.com/MarcelloCroci"
-                class="px-3 py-2 border border-gray-600 bg-black/40 hover:border-white transition"
+                class="px-3 py-2 border border-neutral-600 bg-black/40 hover:border-white transition"
                 target="_blank"
               >
                 <i class="fa-brands fa-github" class="text-white h-6 w-6"></i>
@@ -475,7 +475,7 @@
               <!-- LinkedIn -->
               <a
                 href="https://www.linkedin.com/in/marcello-croci/"
-                class="px-3 py-2 border border-gray-600 bg-black/40 hover:border-white transition"
+                class="px-3 py-2 border border-neutral-600 bg-black/40 hover:border-white transition"
                 target="_blank"
               >
                 <i class="fa-brands fa-linkedin-in" class="text-white h-6 w-6"></i>
@@ -487,51 +487,51 @@
         <!-- RIGHT COLUMN: FORM -->
         <section>
           <div
-            class="bg-black bg-opacity-60 backdrop-blur-md p-8 rounded-lg space-y-6"
+            class="bg-neutral-900/80 p-8 space-y-6"
           >
             <h3 class="text-xl font-semibold uppercase">Invia un messaggio</h3>
             <form id="contact-form" class="space-y-4">
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <label class="block text-gray-400 mb-1">Il tuo nome</label>
+                  <label class="block text-neutral-400 mb-1">Il tuo nome</label>
                   <input
                     type="text"
                     name="from_name"
                     placeholder="Nome Cognome"
-                    class="w-full bg-transparent border border-gray-600 placeholder-gray-500 text-white p-3 rounded focus:outline-none"
+                    class="w-full bg-neutral-800/40 border border-neutral-600 placeholder-neutral-500 text-white p-3 focus:outline-none focus:bg-neutral-800/80"
                   />
                 </div>
                 <div>
-                  <label class="block text-gray-400 mb-1">La tua email</label>
+                  <label class="block text-neutral-400 mb-1">La tua email</label>
                   <input
                     type="email"
                     name="reply_to"
                     placeholder="email@example.com"
-                    class="w-full bg-transparent border border-gray-600 placeholder-gray-500 text-white p-3 rounded focus:outline-none"
+                    class="w-full bg-neutral-800/40 border border-neutral-600 placeholder-neutral-500 text-white p-3 focus:outline-none focus:bg-neutral-800/80"
                   />
                 </div>
               </div>
               <div>
-                <label class="block text-gray-400 mb-1">Oggetto</label>
+                <label class="block text-neutral-400 mb-1">Oggetto</label>
                 <input
                   type="text"
                   name="subject"
                   placeholder="Richiesta Progetto"
-                  class="w-full bg-transparent border border-gray-600 placeholder-gray-500 text-white p-3 rounded focus:outline-none"
+                  class="w-full bg-neutral-800/40 border border-neutral-600 placeholder-neutral-500 text-white p-3 focus:outline-none focus:bg-neutral-800/80"
                 />
               </div>
               <div>
-                <label class="block text-gray-400 mb-1">Messaggio</label>
+                <label class="block text-neutral-400 mb-1">Messaggio</label>
                 <textarea
                   name="message"
                   rows="5"
                   placeholder="Parlami del tuo progetto..."
-                  class="w-full bg-transparent border border-gray-600 placeholder-gray-500 text-white p-3 rounded focus:outline-none resize-none"
+                  class="w-full bg-neutral-800/40 border border-neutral-600 placeholder-neutral-500 text-white p-3 focus:outline-none focus:bg-neutral-800/80 resize-none"
                 ></textarea>
               </div>
               <button
                 type="submit"
-                class="w-full mt-4 bg-white text-black uppercase py-3 font-medium hover:bg-gray-200 transition"
+                class="w-full mt-4 bg-white text-black uppercase py-3 font-medium hover:bg-neutral-200 transition"
               >
                 Invia Messaggio
               </button>
@@ -542,7 +542,7 @@
     </div>
 
     <footer
-      class="grid grid-cols-1 md:grid-cols-3 gap-4 absolute mx-auto w-full bg-black my-auto h-[90px] text-gray-400"
+      class="grid grid-cols-1 md:grid-cols-3 gap-4 absolute mx-auto w-full bg-black my-auto h-[90px] text-neutral-400"
     >
       <div class="text-center max-w-sm mx-auto mt-[30px]">
         <img
@@ -613,7 +613,7 @@
           tagContainer.innerHTML = "";
           p.tags.forEach((t) => {
             const span = document.createElement("span");
-            span.className = "text-xs border border-gray-600 rounded px-2 py-1";
+            span.className = "text-xs border border-neutral-600 rounded px-2 py-1";
             span.textContent = t;
             tagContainer.append(span);
           });
@@ -629,14 +629,14 @@
         document.getElementById("modal").classList.remove("flex");
       });
 
-      // Esempio di JS: logga il titolo della card cliccata
-      document.querySelectorAll("#gallery > div").forEach((card) => {
-        card.addEventListener("click", () => {
-          const title = card.getAttribute("data-title");
-          alert("Hai cliccato su: " + title);
-          // Qui puoi aprire una lightbox, navigare a un dettaglio, ecc.
-        });
-      });
+      // // Esempio di JS: logga il titolo della card cliccata
+      // document.querySelectorAll("#gallery > div").forEach((card) => {
+      //   card.addEventListener("click", () => {
+      //     const title = card.getAttribute("data-title");
+          
+      //     // Qui puoi aprire una lightbox, navigare a un dettaglio, ecc.
+      //   });
+      // });
 
       // inizializza EmailJS
       emailjs.init("YOUR_USER_ID");
