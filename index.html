@@ -169,11 +169,11 @@
 
         <div
           class="relative group cursor-pointer border border-white-500 overflow-hidden"
-          data-project="amada"
+          data-project="pixel"
         >
           <img
-            src="./resources/img/amada.png"
-            alt="Amada Ticketing Facilities"
+            src="https://i.ibb.co/DPdFzhYq/Progetto-senza-titolo.png"
+            alt="PixelCraft"
             class="aspect-video object-cover object-top-left group-hover:scale-125 transition-transform"
           />
 
@@ -620,13 +620,13 @@
           view: "https://bibliosauro.onrender.com",
           code: "https://github.com/MarcelloCroci/Bibliosauro",
         },
-        amada: {
-          title: "Amada - Ticketing Facilities",
-          img: "./resources/img/amada.png",
-          desc: "Piattaforma web dedicata alla gestione e monitoraggio del sistema di ticketing per le strutture interne di un'azienda.",
-          tags: ["HTML", "JavaScript", "CSS", "NodeJS", "Stage Scolastico"],
-          view: "#",
-          code: "#",
+        pixel: {
+          title: "PixelCraft",
+          img: "https://i.ibb.co/DPdFzhYq/Progetto-senza-titolo.png",
+          desc: "",
+          tags: ["HTML", "JavaScript", "CSS", "Progetto Personale"],
+          view: "https://marcellocroci.github.io/PixelCraft/",
+          code: "https://github.com/MarcelloCroci/PixelCraft",
         },
       };
 
@@ -646,15 +646,10 @@
             span.textContent = t;
             tagContainer.append(span);
           });
-          if (p.title === "Amada - Ticketing Facilities") {
-            document.getElementById("modalView").classList.add("hidden");
-            document.getElementById("modalCode").classList.add("hidden");
-          } else {
-            document.getElementById("modalView").classList.remove("hidden");
-            document.getElementById("modalCode").classList.remove("hidden");
-            document.getElementById("modalView").href = p.view;
-            document.getElementById("modalCode").href = p.code;
-          }
+          
+          document.getElementById("modalView").href = p.view;
+          document.getElementById("modalCode").href = p.code;
+          
           document.getElementById("modal").classList.remove("hidden");
           document.getElementById("modal").classList.add("flex");
         });
