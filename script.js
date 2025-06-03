@@ -1,3 +1,4 @@
+////////////////////////////////////////////////////////////////// PARALLAX IMAGE
 const parallaxImage = document.getElementById("parallax-image");
 const container = parallaxImage.parentElement;
 
@@ -258,3 +259,107 @@ if ("ontouchstart" in window) {
     container.dispatchEvent(new MouseEvent("mouseleave"));
   });
 }
+
+//////////////////////////////////////////////////////////////////// EMAILJS
+
+// 1) Inizializza EmailJS con il tuo public key (user ID)
+emailjs.init("9cPYeOjOwADUAgONr");
+
+// 2) Seleziona il form e metti il listener sul vero evento "submit"
+const form = document.getElementById("contact-form");
+form.addEventListener("submit", function (e) {
+  e.preventDefault(); // blocca il reload
+  // 3) Manda il form con service e template corretti
+  emailjs
+    .sendForm("service_eldai5h", "template_w6s8tqs", this)
+    .then(() => {
+      alert("✅ Messaggio inviato con successo!");
+      form.reset();
+    })
+    .catch((err) => {
+      console.error("EmailJS error:", err);
+      alert("❌ Errore nell'invio. Riprova più tardi.");
+    });
+});
+
+/////////////////////////////////////////////////////////////////// FORM HANDLER, MODAL & PROJECTS
+const projects = {
+  phelsuma: {
+    title: "Phelsuma Vibes",
+    img: "https://i.ibb.co/8DTfsycB/phelsuma-vibes.png",
+    desc: "Phelsuma Vibes è un sito web che cerca di diffondere la conoscenza di una specie di rettile esotica. Infatti fornisce dettagli utili su i gechi Phelsuma del Madagascar, con la possibilità di contattare un allevatore certificato per entrarne in possesso o chiedere informazioni.",
+    tags: ["HTML", "JavaScript", "CSS", "Progetto Personale"],
+    view: "https://phelsuma-vibes.netlify.app",
+    code: "#",
+  },
+  pack2go: {
+    title: "Pack2Go",
+    img: "https://i.ibb.co/5WJ8sqkR/pack2go.png",
+    desc: "Pack2Go è una piattaforma web che connette il pubblico a una rete nazionale di centri multimediali. Grazie a un catalogo completo di risorse hardware e software, gli utenti possono ricercare, prenotare e prendere in prestito ciò di cui hanno bisogno in pochi clic.",
+    tags: [
+      "HTML",
+      "JavaScript",
+      "TailwindCSS",
+      "NodeJS",
+      "Progetto Scolastico",
+    ],
+    view: "https://pack2go.onrender.com",
+    code: "https://github.com/MarcelloCroci/Progettone-Multimediale",
+  },
+  bibliosauro: {
+    title: "Bibliosauro",
+    img: "https://i.ibb.co/BHh7WJKv/bibliosauro.png",
+    desc: "Bibliosauro è una web app progettata per gestire le attività di una biblioteca. Il suo obbiettivo è semplificare il più possibile il lavoro di un librario, rendendo tracciabili i prestiti dei libri.",
+    tags: ["HTML", "JavaScript", "CSS", "NodeJS", "Progetto Scolastico"],
+    view: "https://bibliosauro.onrender.com",
+    code: "https://github.com/MarcelloCroci/Bibliosauro",
+  },
+  pixel: {
+    title: "PixelCraft",
+    img: "https://i.ibb.co/DPdFzhYq/Progetto-senza-titolo.png",
+    desc: "PixelCraft è un sito che mostra lo sviluppo della pixel art, dalla sua nascita per necessità all'utilizzo odierno per avere uno stile retro.",
+    tags: ["HTML", "JavaScript", "CSS", "Progetto Personale"],
+    view: "https://marcellocroci.github.io/PixelCraft/",
+    code: "https://github.com/MarcelloCroci/PixelCraft",
+  },
+};
+
+document.querySelectorAll("[data-project]").forEach((card) => {
+  card.addEventListener("click", () => {
+    const key = card.dataset.project;
+    const p = projects[key];
+    document.getElementById("modalImg").src = p.img;
+    document.getElementById("modalTitle").textContent = p.title;
+    document.getElementById("modalDesc").textContent = p.desc;
+    const tagContainer = document.getElementById("modalTags");
+    tagContainer.innerHTML = "";
+    p.tags.forEach((t) => {
+      const span = document.createElement("span");
+      span.className = "text-xs border border-neutral-600 rounded px-2 py-1";
+      span.textContent = t;
+      tagContainer.append(span);
+    });
+
+    document.getElementById("modalView").href = p.view;
+    document.getElementById("modalCode").href = p.code;
+
+    document.getElementById("modal").classList.remove("hidden");
+    document.getElementById("modal").classList.add("flex");
+  });
+});
+
+function closeModal() {
+  document.getElementById("modal").classList.add("hidden");
+  document.getElementById("modal").classList.remove("flex");
+}
+
+document.getElementById("modalClose").addEventListener("click", () => {
+  closeModal();
+});
+
+window.onclick = function (event) {
+  const modal = document.getElementById("modal");
+  if (event.target === modal) {
+    closeModal();
+  }
+};
