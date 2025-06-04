@@ -290,7 +290,7 @@ const projects = {
     desc: "Phelsuma Vibes è un sito web che cerca di diffondere la conoscenza di una specie di rettile esotica. Infatti fornisce dettagli utili su i gechi Phelsuma del Madagascar, con la possibilità di contattare un allevatore certificato per entrarne in possesso o chiedere informazioni.",
     tags: ["HTML", "JavaScript", "CSS", "Progetto Personale"],
     view: "https://phelsuma-vibes.netlify.app",
-    code: "#",
+    code: "https://github.com/MarcelloCroci/Phelsuma-Vibes",
   },
   pack2go: {
     title: "Pack2Go",
@@ -304,7 +304,7 @@ const projects = {
       "Progetto Scolastico",
     ],
     view: "https://pack2go.onrender.com",
-    code: "https://github.com/MarcelloCroci/Progettone-Multimediale",
+    code: "https://github.com/MarcelloCroci/Pack2Go",
   },
   bibliosauro: {
     title: "Bibliosauro",
